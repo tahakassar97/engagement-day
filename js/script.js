@@ -14,7 +14,8 @@ var x = setInterval(function () {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  (document.getElementById("hours").innerText = Math.floor(hours)),
+  (document.getElementById("days").innerText = Math.floor(days)),
+    (document.getElementById("hours").innerText = Math.floor(hours)),
     (document.getElementById("minutes").innerText = Math.floor(minutes)),
     (document.getElementById("seconds").innerText = Math.floor(seconds));
   // If the count down is over, write some text
